@@ -1,0 +1,45 @@
+\documentclass[a4paper,norsk,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+% Oppsett for norsk
+\usepackage[norsk]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\DeclareUnicodeCharacter{00A0}{ }
+\newcommand{\strek}{\textthreequartersemdash}
+
+\usepackage{oving}
+
+% Definer en del felter som brukes på tittelsiden
+%
+\title{MAT100 \strek Obligatorisk innlevering 1}
+\subtitle{Øving 1}
+\author{Christian Stigen Larsen}
+\date{Høst 2015, UiS}
+
+\begin{document}
+  \maketitle
+
+  \oppgave{1}
+  Gitt en leder med elektrisk strømning
+
+  \begin{formel}{oppg1-formel}
+    i_{ab} = -5 \, \textrm{ampere} = -5 \, \textrm{C/s}
+  \end{formel}
+
+  med referanseretning fra $a$ til $b$.
+
+  \deloppgave{a}
+  For å finne total ladning som passerer i tre sekunder tar man
+  formelen \ref{oppg1-formel} og ganger med antall sekunder. (...)
+
+  \deloppgave{b}
+  Gitt figur \ref{oppg1b-figur} kan vi regne ut (...)
+
+  \figur {filnavn.eps}
+         {oppg1b-figur}
+         {Grafen for $i_{ab}(t) = 50 \sin(200 \pi t)$}
+
+\end{document}
