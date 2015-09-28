@@ -10,6 +10,9 @@
 \DeclareUnicodeCharacter{00A0}{ }
 \newcommand{\strek}{\textthreequartersemdash}
 
+% AMS Math
+\usepackage{breqn}
+
 \usepackage{oving}
 
 \title{MAT100 --- Matematiske metoder 1}
@@ -20,12 +23,22 @@
 \begin{document}
 \maketitle
 
-\oppgave{1}
-\deloppgave{a}
+\oppgave{1a}
+
 \paragraph{(1)}
+Med $i^2 = -1$ får vi
 \begin{math}
   (1+i)(1+6i) = 1+6i+i-6 = \svar{-5+7i}
 \end{math}
+
+\paragraph{(2)}
+Utvider brøken med $x_2 - iy_2 = 6 + 2i$ slik at divisor blir
+$6^2+(-2i)^2 = 36 + 4 = 40$:
+\begin{dmath}
+  \frac{(2+3i)(6+2i)}{40} = \frac{12+4i+18i-6}{40}
+  = \frac{6+22i}{40} = \svar{\frac{3}{20} + \frac{11}{20}i}
+\end{dmath}
+
 
 \oppgave{2}
 \oppgave{3}
