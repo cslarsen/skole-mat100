@@ -30,7 +30,7 @@
 %
 \def \oppgavename {Oppgave}
 \newcommand{\oppgave}[1]{
-  \section*{\textsf{\normalsize{\oppgavename\ {}#1}}}
+  \section*{\normalsize{\oppgavename\ {}#1}}
   \label{sec:#1}}
 
 % Define \deloppgave to be a "(number)" paragraph
@@ -76,12 +76,11 @@
 %   - \textbook (feks "\textit{Boknavn}, 3. utgave")
 %
 \renewcommand{\maketitle}{
-  \flushleft{\Large{\textsf{\@title}}}
+  \flushleft{\Large{\@title}}
 
-  \flushleft{\normalsize{\textsf{\@subtitle\\
+  \flushleft{\normalsize{\@subtitle\\
+    \ {}\\
     \@author\\
     \@date\\
     \ {}\\
     \@textbook}}}
-
-  \hrulefill}
