@@ -1,8 +1,11 @@
 TARGETS := plot.eps oblig1.pdf
 
+open: all
+	open oblig1.pdf
+
 all: $(TARGETS)
 
-%.eps: %.gp
+%.eps: %.gp data.txt
 	gnuplot $<
 
 oblig1.pdf: oblig1.tex plot.eps
