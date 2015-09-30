@@ -73,18 +73,12 @@ slik at $\cos{x} = x$.
 \oppgave{5}
 
 \oppgave{6a}
-Dersom vi utvider brøken med $\frac{1}{x}$ unngår vi null i divisoren for alle
-$x$, og kan dermed finne grenseverdien:
+Vi løser dette ved å kansellere $x+2$ i dividend og divisor. Dette kan vi gjøre
+fordi $x$ vil aldri være eksakt lik $2$:
 \begin{equation*}
 \begin{split}
-  \lim_{x \to -2}{\frac{x^2+4x+4}{x-2}} = \lim_{x \to -2}\frac{x+4+\frac{4}{x}}{1-\frac{2}{x}}
-\end{split}
-\end{equation*}
-Vi setter inn $x=-2$ og får
-\begin{equation*}
-\begin{split}
-  \lim_{x \to -2}\frac{-2+4+\frac{4}{-2}}{1-\frac{2}{-2}} =
-  \frac{0}{2} = \svar{0}
+  \lim_{x \to -2}{\frac{x^2+4x+4}{x+2}} = \lim_{x \to -2}{\frac{(x+2)^2}{x+2}}
+  = \lim_{x \to -2}{x+2} = \svar{0}
 \end{split}
 \end{equation*}
 
