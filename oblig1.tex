@@ -82,4 +82,25 @@ fordi $x$ vil aldri være eksakt lik $2$:
 \end{split}
 \end{equation*}
 
+\oppgave{6b}
+Her har vi ingen singulariteter for $x>0$, så da kan vi utvide brøken med
+$\frac{1}{x^5}$:
+\begin{equation*}
+\begin{split}
+  \lim_{x \to \infty}{\frac{x^5+2x^2+12}{3x^5+18x^4+10x^2+18}} =
+    \lim_{x \to \infty}{
+        \frac{
+          1+\frac{2}{x^3}+\frac{12}{x^5}
+        }{
+          3+\frac{18}{x}+\frac{10}{x^3}+\frac{18}{x^5}
+      }}
+\end{split}
+\end{equation*}
+For alle $x>0$ vil $\lim_{x \to \infty}{\frac{1}{x^n}} = 0$, dermed får vi
+\begin{equation*}
+\begin{split}
+  = \lim_{x \to \infty}{\frac{1}{3}} = \frac{1}{3}
+\end{split}
+\end{equation*}
+
 \end{document}
