@@ -144,6 +144,8 @@ l'Hôpital at
   \lim_{x\to x_0}{\frac{g'(x)}{h'(x)}}
 \end{split}
 \end{equation*}
+gitt at $h'(x) \neq 0$ for alle $x \neq x_0$.
+
 Vi har $g'(x) = 2x$ og $h'(x) = 1$. Dermed er \textit{grenseverdien}, som aldri
 omfatter punktet $x_0=3$, i $f(3)$
 lik $6$. For at funksjonen skal bli kontinuerlig for alle $x$ må vi sette
@@ -151,12 +153,28 @@ $f(3) \equiv 6$.
 
 \oppgave{3b}
 Vi skriver
-\begin{equation}
+\begin{equation*}
   f(x) = \frac{x^2+3x-10}{x-2} = \frac{(x-2)(x+5)}{x-2}
-\end{equation}
+\end{equation*}
 Ved samme argument som i oppgave 3a har vi at $g(2) \equiv 7$.
 
 \oppgave{3c}
+Med bakgrunn i oppgavene 3a og 3b setter vi krav om at
+\begin{equation*}
+  \lim_{x\to 3}{(x^2-1)} = \lim_{x\to 3}{2ax}
+\end{equation*}
+Vi kan dermed ta grenseverdien av de deriverte,
+\begin{equation*}
+  \lim_{x\to x_0=3}{2x} = \lim_{x\to 3}{2a}
+\end{equation*}
+For at dette skal gjelde i $x_0=3$ må vi ha at
+\begin{equation*}
+  \begin{split}
+    2a & = 2x_0 \\
+    \text{Svar: } a & = 3 \\
+  \end{split}
+\end{equation*}
+
 
 \oppgave{4}
 At det finnes minst én $x$ slik at $\cos{x}=x$ er det samme som å si at det
