@@ -1,4 +1,4 @@
-TARGETS := plot.eps oblig1.pdf
+TARGETS := plot.eps plot1c.eps oblig1.pdf
 
 all: $(TARGETS)
 
@@ -8,7 +8,9 @@ open: all
 %.eps: %.gp data.txt
 	gnuplot $<
 
-oblig1.pdf: oblig1.tex plot.eps
+plot1c.eps: plot1c.gp data1c.txt
+
+oblig1.pdf: oblig1.tex plot.eps plot1c.eps
 
 %.pdf: %.tex
 	pdflatex $<

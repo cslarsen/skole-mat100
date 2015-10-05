@@ -40,7 +40,7 @@ Vi bruker $r = |z| = \sqrt{x^2+y^2}$ og $\theta = \text{arg } z =
 \end{split}
 \end{equation*}
 Se figur \vref{plot.1b} for plott av punktene i det komplekse planet.
-%
+
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{plot.eps}
@@ -49,11 +49,29 @@ Se figur \vref{plot.1b} for plott av punktene i det komplekse planet.
 \end{figure}
 
 \oppgave{1c}
-$z^c = e^{c\ln{z}}$ gir $\sqrt[3]{8i} = e^{\frac{1}{3}\ln{8i}}$.
+For $z=8i$ har vi $|z| = r = 8$, $\sqrt[3]{r} = (2^3)^\frac{1}{3} = 2$ og
+$\text{Arg }z = \theta = \arctan{8} \approx 0.139$ som gir
 \begin{equation*}
 \begin{split}
+  \sqrt[3]{8i} = 2\left( \cos{\frac{\theta+2k\pi}{3}} +
+  i\sin{\frac{\theta+2k\pi}{3}} \right) \text{ for } k = 0, 1, 2
 \end{split}
 \end{equation*}
+\begin{equation*}
+\begin{split}
+  k=0 \text{ gir } w_0 = 1.997 + 0.092i \\
+  k=1 \text{ gir } w_1 = -1.078 + 1.683i \\
+  k=2 \text{ gir } w_2 = -0.918 - 1.776i \\
+\end{split}
+\end{equation*}
+Plott i figur \vref{plot.1c}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{plot1c.eps}
+\caption{Røtter for $\sqrt[3]{8i}$ (oppgave 1c)}
+\label{plot.1c}
+\end{figure}
 
 \oppgave{2}
 \oppgave{3}
