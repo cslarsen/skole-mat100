@@ -126,7 +126,32 @@ $\text{Arg }z = \theta = \frac{\pi}{2}$ ($\tan^{-1}{n} \to \frac{\pi}{2} \text{�
 \end{split}
 \end{equation*}
 
-\oppgave{3}
+\oppgave{3a}
+Vi kan skrive
+\begin{equation*}
+\begin{split}
+  f(x) = \frac{x^2-3^2}{x-3} = \frac{(x+3)(x-3)}{x-3}
+\end{split}
+\end{equation*}
+Vi kan ikke kansellere $x-3$, fordi i $x_0=3$ får vi
+$\frac{0}{0}$. Men setter vi $g(x)=x^2-3^2$ og $h(x)=x-3$ ser vi at $g$ og $h$
+er begge kontinuerlige i og har null som grenseverdi i $x_0$. Dermed har vi ved
+l'Hôpital at
+\begin{equation*}
+\begin{split}
+  \lim_{x\to x_0}{f(x)} =
+  \lim_{x\to x_0}{\frac{g(x)}{h(x)}} =
+  \lim_{x\to x_0}{\frac{g'(x)}{h'(x)}}
+\end{split}
+\end{equation*}
+Vi har $g'(x) = 2x$ og $h'(x) = 1$. Dermed er grenseverdien i $f(3)$ lik $6$ og
+funksjonen er altså kontinuerlig for alle $x$. Men vi kan gjerne
+\textit{definere} at $f(3) \equiv 6$. Da ser vi at kan like godt sette $f(x) =
+x+3$.
+
+\oppgave{3b}
+
+\oppgave{3c}
 
 \oppgave{4}
 At det finnes minst én $x$ slik at $\cos{x}=x$ er det samme som å si at det
