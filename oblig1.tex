@@ -28,13 +28,13 @@ y_2^2 = 40$,
 \oppgave{1b}
 
 Vi bruker $r = |z| = \sqrt{x^2+y^2}$ og $\theta = \text{arg } z =
-\arctan\frac{y}{x}$ for å finne $z = re^{i\theta}$.
+\tan^{-1}\frac{y}{x}$ for å finne $z = re^{i\theta}$.
 \begin{equation*}
 \begin{split}
-  r = \sqrt{3^2+3^2} \approx 4.24 \text{ og } \theta = \arctan{1} =
+  r = \sqrt{3^2+3^2} \approx 4.24 \text{ og } \theta = \tan^{-1}{1} =
   \frac{\pi}{4} = 45^\circ \text{ gir } \svar{3+3i = 4.24 e^{i\frac{\pi}{4}}}
   \\
-  r=\sqrt{3+1}=2 \text{ og } \theta = \arctan{-1/\sqrt{3}} = -30^\circ \approx -0.52
+  r=\sqrt{3+1}=2 \text{ og } \theta = \tan^{-1}{-1/\sqrt{3}} = -30^\circ \approx -0.52
   \text{ gir }
   \svar{\sqrt{3}-i = 2e^{-0.52i}}
 \end{split}
@@ -49,22 +49,24 @@ Se figur \vref{plot.1b} for plott av punktene i det komplekse planet.
 \end{figure}
 
 \oppgave{1c}
-For $z=8i$ har vi $|z| = r = 8$, $\sqrt[3]{r} = (2^3)^\frac{1}{3} = 2$ og
-$\text{Arg }z = \theta = \arctan{8} \approx 0.139$ som gir
+For $z=8i$ har vi $r = |z| = 8$, $\sqrt[3]{r} = (2^3)^\frac{1}{3} = 2$ og
+$\text{Arg }z = \theta = \frac{\pi}{2}$ ($\tan^{-1}{n} \to \frac{\pi}{2} \text{ når } n \to
+\infty$), som gir
 \begin{equation*}
 \begin{split}
   \sqrt[3]{8i} = 2\left( \cos{\frac{\theta+2k\pi}{3}} +
   i\sin{\frac{\theta+2k\pi}{3}} \right) \text{ for } k = 0, 1, 2
 \end{split}
 \end{equation*}
+%
 \begin{equation*}
 \begin{split}
-  k=0 \text{ gir } w_0 = 1.997 + 0.092i \\
-  k=1 \text{ gir } w_1 = -1.078 + 1.683i \\
-  k=2 \text{ gir } w_2 = -0.918 - 1.776i \\
+  k = 0 \text{ gir } w_0 & = 1.732 + 0.999i \\
+  k = 1 \text{ gir } w_1 & = -1.732 + 0.999i \\
+  k = 2 \text{ gir } w_2 & = -3.674 - 2.0i \\
 \end{split}
 \end{equation*}
-Plott i figur \vref{plot.1c}.
+Plotten er gitt i figur \vref{plot.1c}.
 
 \begin{figure}
 \centering
