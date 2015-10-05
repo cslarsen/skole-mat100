@@ -1,7 +1,7 @@
 set term post eps
 set output "plot1c.eps"
-set border 0
-set grid
+#set border 0
+#set grid
 set xrange [-2.2:2.2]
 set yrange [-2.2:2.2]
 set size ratio 1
