@@ -11,36 +11,28 @@
 
 \oppgave{1a}
 \paragraph{(1)} Prøver med $y=e^{rt}$,
-\begin{equation*}
-  \begin{split}
-    r^2e^{rt} + 5re^{rt} - 6e^{rt} = 0 \\
-    e^{rt}(r^2+5r-6) = e^{rt}(r+6)(r-1) = 0
-  \end{split}
-\end{equation*}
+\begin{align*}
+  r^2e^{rt} + 5re^{rt} - 6e^{rt} = 0 \\
+  e^{rt}(r^2+5r-6) = e^{rt}(r+6)(r-1) = 0
+\end{align*}
 %
 som gir $D = b^2 - 4ac = 49$. Med $D > 0$ har vi reelle forskjellige røtter
 $r_1$ og $r_2$, og siden $e^{rt} \neq 0$ er $r_1=-6$ og $r_2=1$. Den generelle
 løsningen er da
 %
-\begin{equation*}
-  \begin{split}
-    y & = Ae^{r_1t} + Be^{r_2t} = \svar{Ae^{-6} + Be^t}
-  \end{split}
-\end{equation*}
+\begin{align*}
+  y & = Ae^{r_1t} + Be^{r_2t} = \svar{Ae^{-6} + Be^t}
+\end{align*}
 
 \paragraph{(2)} Prøver igjen med $y=e^{rt}$,
-\begin{equation*}
-  \begin{split}
-    e^{rt}(r^2 + 6r + 9) = e^{rt}(r+3)^2 = 0
-  \end{split}
-\end{equation*}
+\begin{align*}
+  e^{rt}(r^2 + 6r + 9) = e^{rt}(r+3)^2 = 0
+\end{align*}
 Vi ser at vi har sammenfallede røtter ($D=0$), derfor er én løsning $y_1 =
 e^{rt}$. Forsøker vi med $y = ue^{rt}$ får vi den generelle løsningen
-\begin{equation*}
-  \begin{split}
-    y & = (A + Bt)e^{-3t} = \svar{Ae^{-3t} + Be^{-3t}t}
-  \end{split}
-\end{equation*}
+\begin{align*}
+  y & = (A + Bt)e^{-3t} = \svar{Ae^{-3t} + Be^{-3t}t}
+\end{align*}
 
 \oppgave{2}
 \textit{Ikke utført}
@@ -48,29 +40,30 @@ e^{rt}$. Forsøker vi med $y = ue^{rt}$ får vi den generelle løsningen
 \oppgave{3}
 \paragraph{(a)}
 Fart er avstand over tid, og ved høyeste punkt er farten null.
-\begin{equation*}
-  \begin{split}
-    \frac{ds}{dt} = \dot{s} = -32t + 160 & = \unitfrac[0]{m}{s} \\
-    t = \nicefrac{160}{32} & = \unit[5]{s} \\
-    s = 5(160-16\cdot5) & = \svar{\unit[400]{m}}
-  \end{split}
-\end{equation*}
+\begin{align*}
+  \frac{ds}{dt} = \dot{s} = -32t + 160 & = \unitfrac[0]{m}{s} \\
+  t = \nicefrac{160}{32} & = \unit[5]{s} \\
+  s = 5(160-16\cdot5) & = \svar{\unit[400]{m}}
+\end{align*}
 
 \paragraph{(b)}
 Da dette er lavere enn makshøyden, vil raketten passere denne høyden to ganger,
 med lik absoluttfart men motsatt fortegn:
-\begin{equation*}
-  \begin{split}
-    s  = 160t-16t^2 & = \unit[256]{m} \\
-    -16t^2+160t-256 & = 16(t-8)(t-2) = 0 \\
-    t = \unit[2]{s} & \vee t = \unit[8]{s}
-  \end{split}
-\end{equation*}
-\begin{equation*}
-  \begin{split}
-    \dot{s}(2) = -32\cdot2 + 160\cdot2 = \svar{\unitfrac[96]{m}{s}}
-  \end{split}
-\end{equation*}
+\begin{align*}
+  s  = 160t-16t^2 & = \unit[256]{m} \\
+  -16t^2+160t-256 & = 16(t-8)(t-2) = 0 \\
+  t = \unit[2]{s} & \vee t = \unit[8]{s} \\
+  \dot{s}(2) = -32\cdot2 + 160\cdot2 & = \svar{\unitfrac[96]{m}{s}}
+\end{align*}
+
+\paragraph{(c)}
+Akselerasjon er momentanendring av fart:
+\begin{align*}
+  \ddot{s} = \frac{d\dot{s}}{dt} = \svar{\unitfrac[-32]{m}{s^2}}
+\end{align*}
+
+\paragraph{(d)}
+
 
 \oppgave{4}
 \textit{Ikke utført}
