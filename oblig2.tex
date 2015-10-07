@@ -50,9 +50,25 @@ e^{rt}$. Forsøker vi med $y = ue^{rt}$ får vi den generelle løsningen
 Fart er avstand over tid, og ved høyeste punkt er farten null.
 \begin{equation*}
   \begin{split}
-    \frac{ds}{dt} = \dot{s} = -32t + 160 = \unitfrac[0]{m}{s} \\
-    t = \nicefrac{160}{32} = \unit[5]{s} \\
-    s = 5(160-16\cdot5) = \svar{\unit[400]{m}}
+    \frac{ds}{dt} = \dot{s} = -32t + 160 & = \unitfrac[0]{m}{s} \\
+    t = \nicefrac{160}{32} & = \unit[5]{s} \\
+    s = 5(160-16\cdot5) & = \svar{\unit[400]{m}}
+  \end{split}
+\end{equation*}
+
+\paragraph{(b)}
+Da dette er lavere enn makshøyden, vil raketten passere denne høyden to ganger,
+med lik absoluttfart men motsatt fortegn:
+\begin{equation*}
+  \begin{split}
+    s  = 160t-16t^2 & = \unit[256]{m} \\
+    -16t^2+160t-256 & = 16(t-8)(t-2) = 0 \\
+    t = \unit[2]{s} & \vee t = \unit[8]{s}
+  \end{split}
+\end{equation*}
+\begin{equation*}
+  \begin{split}
+    \dot{s}(2) = -32\cdot2 + 160\cdot2 = \svar{\unitfrac[96]{m}{s}}
   \end{split}
 \end{equation*}
 

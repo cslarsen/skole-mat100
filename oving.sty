@@ -66,11 +66,8 @@
      \label{#1}}
   {\end{equation}}
 
-\newenvironment{eqs}
-  {\begin{equation*}
-   \begin{split}}
-  {\end{split}
-   \end{equation*}}
+\newcommand{\eqs}[1]{
+  {\begin{equation*}\begin{split}{#1}\end{split}\end{equation*}}}
 
 % Double lines for answer
 \newcommand{\svar}[1]
