@@ -1,0 +1,31 @@
+\documentclass[a4paper,norsk,12pt]{article}
+\input{preamble}
+
+\title{MAT100 --- Matematiske metoder 1}
+\subtitle{Obligatorisk innlevering 2}
+\author{Christian Stigen}
+\date{UiS, 9.~oktober, 2015}
+
+\begin{document}
+\maketitle
+
+\oppgave{1a}
+\paragraph{(1)} Prøver med $y=e^{rt}$,
+\begin{equation*}
+  \begin{split}
+    r^2e^{rt} + 5re^{rt} - 6e^{rt} = 0 \\
+    e^{rt}(r^2+5r-6) = e^{rt}(r+6)(r-1) = 0
+  \end{split}
+\end{equation*}
+%
+som gir $D = b^2 - 4ac = 25$. Med $D > 0$ har vi reelle forskjellige røtter
+$r_1$ og $r_2$, og siden $e^{rt} \neq 0$ er $r_1=-6$ og $r_2=1$. Den generelle
+løsningen er da
+\begin{equation*}
+  \begin{split}
+    y & = Ae^{r_1t} + Be^{r_2t} = \svar{Ae^{-6} + Be^t}
+  \end{split}
+\end{equation*}
+
+
+\end{document}
