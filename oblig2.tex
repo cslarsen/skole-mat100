@@ -105,15 +105,21 @@ Vi har $\frac{0}{0}$ og bruker l'Hôpital to ganger:
 \end{align*}
 
 \oppgave{5a}
-Dette er en separabel differensiallikning:
+Dette er en separabel differensiallikning.
 \begin{align*}
-  \frac{dT}{dt}  = k(T-a) & \text{ , }
+  \frac{dT}{dt}  = k(T-a) & \text{ som gir }
   \frac{dT}{T-a}  = k~dt \\
   \int{\frac{1}{T-a}~dT} & = \int{ k~dt } \\
   \ln{(T-a)} & = kt + C_1 \\
   e^{\ln{(T-a)}} & = e^{kt + C_1} \\
   T-a & = e^{C_1} e^{kt} = Ce^{kt} \\
   T & = a + Ce^{kt}
+\end{align*}
+For å bestemme konstanten $C$ bruker vi initialbetingelsene.
+\begin{align*}
+  T(0) &= 20 + Ce^{k\cdot0} = 4 \\
+  C &= 4 - 20 = -16 \\
+  T &= \svar{ = 20 - 16e^{kt}}
 \end{align*}
 
 \oppgave{5b}
