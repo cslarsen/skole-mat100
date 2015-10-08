@@ -79,7 +79,7 @@ L'Hôpital gjelder, og vi får
 \begin{align*}
   \lim_{x\to 0}\frac{ \frac{1}{2\sqrt{1+x}} -\frac{1}{2} }{2x} \text{ ,}
 \end{align*}
-men vi kan bruke den én gang til.
+men vi kan bruke den én gang til:
 \begin{align*}
   \lim_{x\to 0}\frac{ -\frac{1}{4}(1+x)^{-\frac{3}{2}} }{2} =
     \svar{-\frac{1}{8}}
@@ -104,8 +104,21 @@ Vi har $\frac{0}{0}$ og bruker l'Hôpital to ganger:
   \frac{0}{2\cdot1 - 0 \cdot 0} = \svar{0}
 \end{align*}
 
-\oppgave{5}
+\oppgave{5a}
+Dette er en separabel differensiallikning:
+\begin{align*}
+  \frac{dT}{dt}  = k(T-a) & \text{ , }
+  \frac{dT}{T-a}  = k~dt \\
+  \int{\frac{1}{T-a}~dT} & = \int{ k~dt } \\
+  \ln{(T-a)} & = kt + C_1 \\
+  e^{\ln{(T-a)}} & = e^{kt + C_1} \\
+  T-a & = e^{C_1} e^{kt} = Ce^{kt} \\
+  T & = a + Ce^{kt}
+\end{align*}
+
+\oppgave{5b}
 \textit{Ikke utført}
+
 
 \oppgave{6}
 \begin{align*}
