@@ -92,7 +92,17 @@ Utvider med $\frac{1}{x^2}$, og siden $\lim_{x\to\infty}\frac{1}{x} = 0$ vil
 \end{align*}
 
 \paragraph{(d)}
-\textit{Ikke utført}
+Summerer brøkene med fellesnevner, og får
+\begin{align*}
+  \lim_{x\to 0}\frac{1}{\sin{x}} - \frac{1}{x} =
+  \lim_{x\to 0}\frac{x - \sin{x}}{x\sin{x}}
+\end{align*}
+Vi har $\frac{0}{0}$ og bruker l'Hôpital to ganger:
+\begin{align*}
+  \lim_{x\to 0}\frac{1 - \cos{x}}{x\cos{x} + \sin{x}} =
+  \lim_{x\to 0}{\frac{\sin{x}}{2\cos{x} - x\sin{x}}} =
+  \frac{0}{2\cdot1 - 0 \cdot 0} = \svar{0}
+\end{align*}
 
 \oppgave{5}
 \textit{Ikke utført}
