@@ -119,11 +119,26 @@ For å bestemme konstanten $C$ bruker vi initialbetingelsene.
 \begin{align*}
   T(0) &= 20 + Ce^{k\cdot0} = 4 \\
   C &= 4 - 20 = -16 \\
-  T &= \svar{ = 20 - 16e^{kt}}
+  T &= \svar{20 - 16e^{kt}}
 \end{align*}
 
 \oppgave{5b}
-\textit{Ikke utført}
+\begin{align*}
+  T(5) & = 20-16e^{5k} = 8 \\
+  -16e^{5k} & = -12 \\
+  e^{5k} & = \frac{3}{4} \\
+  5k & = \ln\frac{3}{4} \\
+  k & = \frac{\ln 3 - \ln 4}{5}
+\end{align*}
+Etter 15 minutter er da temperaturen
+\begin{align*}
+  T(15) & = 20 - 16e^{15\frac{\ln 3 - \ln 4}{5}} \\
+        & = 20 - 16(e^{(\ln 3 - \ln 4)})^3 \\
+        & = 20 - 16\left( \frac{e^{\ln 3}}{e^{\ln 4}} \right)^3 \\
+        & = 20 - 4^2\frac{3^3}{4^3} \\
+        & = 20 - \frac{3^3}{4} \\
+        & = \svar{\unit[\frac{53}{4}]{^\circ C}} = \unit[13.25]{^\circ C}
+\end{align*}
 
 
 \oppgave{6}
