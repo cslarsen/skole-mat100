@@ -35,7 +35,29 @@ e^{rt}$. Forsøker vi med $y = ue^{rt}$ får vi den generelle løsningen
 \end{align*}
 
 \oppgave{2}
-\textit{Ikke utført}
+Skjønner ikke hvordan dette kan løses med pensum i MAT100. Men dette er en
+\textit{algebraisk, implisitt kurve}, derfor kan vi finne tangenten i et punkt
+med partielle deriverte.
+\begin{align*}
+  z = y^6 - 2xy + x^6 \text{ ~,~ }
+  F_x = \frac{ \partial z }{ \partial x } = 6x^5 - 2y & \text{ ~og~ }
+  F_y = \frac{ \partial z }{ \partial y } = 6y^5 - 2x \\
+\end{align*}
+Da er tangenten i et punkt $(x_0, y_0)$ gitt av
+\begin{align*}
+  F_x(x_0, y_0)(x - x_0) + F_y(x_0, y_0)(y - y_0) & = 0 \\
+\end{align*}
+For $(x_0, y_0) = (1, 1)$,
+\begin{align*}
+  F_x(x_0, y_0)(x - x_0) & = 4(x-1) \\
+  F_y(x_0, y_0)(y - y_0) & = 4(y-1) \\
+\end{align*}
+Da er tangenten uttrykt ved
+\begin{align*}
+  4(x-1) + 4(y-1) = 0 \\
+  4x + 4y = 8 \\
+  \svar{y  = 2 - x}
+\end{align*}
 
 \oppgave{3}
 \paragraph{(a)}
@@ -144,7 +166,7 @@ Etter 15 minutter er da temperaturen
 \begin{align*}
   f'(x) = 3x^2 + 1 & = 5 \text{ for } x \in [0,2]\\
   x^2 = \frac{4}{3} & \text{ gir }
-  \svar{x = \frac{2}{\sqrt{3}}}
+  \svar{x = \frac{2}{\sqrt{3}}} \text{ fordi } x \in [0,2]
 \end{align*}
 
 \end{document}
