@@ -91,7 +91,27 @@ Altså er
 \textit{Ikke utført}
 
 \oppgave{1g}
-\textit{Ikke utført}
+Vi prøver oss litt frem med derivasjon.
+\begin{align*}
+  (e^x \cos{x})' &= e^x\cos{x} - e^x\sin{x} \\
+  (e^x \sin{x})' &= e^x\sin{x} + e^x\cos{x}
+\end{align*}
+Ved å summere uttrykkene over så kanselleres $e^x\sin{x}$. Det gir oss
+imidlertid $2e^x\cos{x}$, derfor prøver vi å derivere summen multiplisert med
+en halv:
+\begin{align*}
+  \left( \frac{1}{2}e^x \cos{x} +
+         \frac{1}{2}e^x \sin{x} \right)' =
+    \frac{1}{2} \left( 
+        e^x\cos{x}-e^x\sin{x} + e^x\sin{x} + e^x\cos{x}
+      \right)' = e^x\cos{x}
+\end{align*}
+Dermed får vi
+\begin{align*}
+  \int{e^x\cos{x}} \,dx = 
+  \svar{ \frac{1}{2}e^x( \sin{x} + \cos{x} ) + C }
+\end{align*}
+
 
 \oppgave{2a}
 \textit{Ikke utført}
