@@ -52,17 +52,26 @@ kjerneregelen:
   g(x) &= \ln{x} \\
   f(x) &= x^2+1 \\
   h(x) &= g(f(x)) = \ln{(x^2+1)} \\
-  \\
-  h'(x) &= g'(f(x)) \cdot f'(x) \\
-        &= \frac{1}{x^2+1} \cdot 2x
+  h'(x) &= g'(f(x)) \cdot f'(x) = \frac{1}{x^2+1} \cdot 2x
 \end{align*}
 Dette gir direkte
 \begin{align*}
-  \int \frac{2x}{x^2+1} \,dx = \ln{(x^2+1)} + C
+  \int \frac{2x}{x^2+1} \,dx = \svar{\ln{(x^2+1)} + C}
 \end{align*}
 
 \oppgave{1d}
-\textit{Ikke utført}
+Vi vet at $\frac{d}{dx}\sqrt{x} = \frac{1}{2\sqrt{x}}$, dermed kan vi prøve å
+bruke kjerneregelen igjen:
+\begin{align*}
+  g(x) &= \sqrt{x} \\
+  f(x) &= e^x+1 \\
+  h(x) &= g(f(x)) = \sqrt{e^x+1} \\
+  h'(x) &= g'(f(x)) \cdot f'(x) = \frac{1}{2\sqrt{e^x+1}} \cdot e^x
+\end{align*}
+Dette er halvparten av det vi er ute etter, dermed kan vi skrive
+\begin{align*}
+  \int \frac{e^x}{\sqrt{e^x+1}} \,dx = \svar{2\sqrt{e^x+1} + C}
+\end{align*}
 
 \oppgave{1e}
 \textit{Ikke utført}
