@@ -74,7 +74,18 @@ Dette er halvparten av det vi er ute etter, dermed kan vi skrive
 \end{align*}
 
 \oppgave{1e}
-\textit{Ikke utført}
+Vi vet at $(x^4)' = 4x^3$. Vi bruker kjerneregelen med $\frac{1}{4}$ som
+kansellering av faktoren fire:
+\begin{align*}
+  g(x) &= \frac{1}{4} x^4 \\
+  f(x) &= \sin{x} \\
+  h(x) &= g(f(x)) = \frac{1}{4}(\sin{x})^4 = \frac{1}{4} \sin^4{x} \\
+  h'(x) &= g'(f(x)) \cdot f'(x) = \sin^3{x} \cdot \cos{x}
+\end{align*}
+Altså er
+\begin{align*}
+  \int \sin^3{x} \cos{x} \,dx = \svar{ \frac{1}{4} \sin^4{x} + C }
+\end{align*}
 
 \oppgave{1f}
 \textit{Ikke utført}
