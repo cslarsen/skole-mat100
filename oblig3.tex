@@ -88,7 +88,44 @@ Altså er
 \end{align*}
 
 \oppgave{1f}
-\textit{Ikke utført}
+Vi skriver om
+\begin{align}
+  \label{1f.1}
+  \frac{x+8}{x^3+4x} = \frac{x+8}{x(x^2+4)} =
+    \frac{1}{x^2+4} + 8\frac{1}{x}\frac{1}{x^2+4}
+\end{align}
+Fra før vet vi at $\frac{d}{dx}\tan^{-1}{x} = \frac{1}{x^2+1}$. Dersom vi
+bruker kjerneregelen med $f(x) = \frac{1}{2}x$, $g(x) = \tan^{-1}{x}$ og $h(x) =
+g(f(x)) = \tan^{-1}{\frac{x}{2}}$ så får vi
+\begin{align*}
+  \left( \tan^{-1}{\frac{x}{2}} \right)' =
+    \frac{1}{\frac{1}{4}x^2+1}\cdot\frac{1}{2} = \frac{2}{x^2+4}
+\end{align*}
+Dermed ser vi at $\int\frac{1}{x^2+4}\,dx = \frac{1}{2}\tan^{-1}{\frac{x}{2}} + C$.
+%
+Videre vet vi at
+\begin{align}
+  \label{1f.x1}
+  (\ln{x})' &= \frac{1}{x} \\
+  \label{1f.x2}
+  (\ln{x^2+1})' &= \frac{2x}{x^2+1} \text{fra oppgave 1c}
+\end{align}
+Ved å ta $(\ln{x^2+4})' = \frac{2x}{x^2+4}$
+så kan vi kombinere disse to til å få siste ledd på høyresiden i likning
+\vref{1f.1} over:
+\begin{align}
+  \label{1f.2}
+  \frac{2}{x} - \frac{2x}{x^2+4} = \frac{2(x^4+4)}{x(x^2+4)}
+    - \frac{2x^2}{x(x^2+4)} 
+    = \frac{(2x^2+8) - 2x^2}{x(x^2+4)} = \frac{8}{x(x^2+4)}
+\end{align}
+Venstresiden i likning \vref{1f.2} over er triviell å integrere --- vi bruker
+likning \vref{1f.x1} med konstant faktor to, samt likning \vref{1f.x2}, og får
+til slutt:
+\begin{align*}
+  \int \frac{x+8}{x^3+4x} \,dx = \svar{\frac{1}{2}\tan^{-1}{\frac{x}{2}} +
+  \ln{(x^2+4)} - 2\ln{x} + C}
+\end{align*}
 
 \oppgave{1g}
 Vi prøver oss litt frem med derivasjon.
