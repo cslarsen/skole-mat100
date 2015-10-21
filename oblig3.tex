@@ -192,12 +192,53 @@ Vi ser bort fra konstanten $C$ som kanselleres.
 
 \oppgave{3a}
 \begin{align*}
-  f'(x) = 1 + 2\cos{x} & = 0\\
-  \cos{x} & = -\frac{1}{2}
+  f(x) &= x+2\sin{x} \text{ for } x \in \left[-\pi, \frac{5\pi}{3}\right] \\
+  f'(x) &= 1 + 2\cos{x} \\
+  f''(x) &= -2\sin{x}
 \end{align*}
+Vi ser først på fortegnet til $f''(x)$ for å bestemme om lokale
+ekstremalpunkter er maskimale eller minimale.
+\begin{table}[h]
+  \centering
+\begin{tabular}{ccccccccc}
+  & $-\pi$
+  &
+  & $0$
+  &
+  & $\pi$
+  &
+  & $2\pi$
+  &
+\\ \hline
+    \textbf{\large{+}}
+& & \textbf{\large{-}}
+& & \textbf{\large{+}}
+& & \textbf{\large{-}}
+& & \textbf{\large{+}}
+\end{tabular}
+\end{table}
+
+Punktene er gitt ved
+\begin{align*}
+  f'(x) = 0 \\
+  \cos{x} = -\frac{1}{2}
+\end{align*}
+Da $\cos{x} = -\frac{1}{2}$ for $x=\frac{\pi}{3}$ må også
+$\cos{x}=-\frac{1}{2}$ for alle $x = \frac{\pi}{3} + k\pi, k \in \mathbb{Z}$.
+Dette fordi kosinuskurven inntar alle verdier mellom $-1$ og $1$ \textit{to
+ganger} i perioden $2\pi$. Dermed får vi følgende \textit{lokale} ekstremalpunkter
+(altså, ikke medregnet endepunktene) for $x \in D_f$:
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ll}
+    $x_0 = -\frac{2\pi}{3}$ & lokalt \textit{minima} \\
+    $x_1 =  \frac{2\pi}{3}$ & lokalt \textit{maksima} \\
+    $x_2 =  \frac{4\pi}{3}$ & lokalt \textit{minima}
+  \end{tabular}
+\end{table}
 
 \oppgave{3b}
-\textit{Ikke utført}
+Regner med det menes \textit{globale} ekstremalpunkter i $D_f$. 
 
 \oppgave{4}
 Da $v'(t) = \frac{1}{10^3}$ er volumet gitt ved
