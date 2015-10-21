@@ -225,7 +225,7 @@ Punktene er gitt ved
 \end{align*}
 Da $\cos{x} = -\frac{1}{2}$ for $x=\frac{\pi}{3}$ må også
 $\cos{x}=-\frac{1}{2}$ for alle $x = \frac{\pi}{3} + k\pi, k \in \mathbb{Z}$.
-Dette fordi kosinuskurven inntar alle verdier mellom $-1$ og $1$ \textit{to
+Dette fordi cosinus-kurven inntar alle verdier mellom $-1$ og $1$ \textit{to
 ganger} i perioden $2\pi$. Dermed får vi følgende \textit{lokale} ekstremalpunkter
 (altså, ikke medregnet endepunktene) for $x \in D_f$:
 \begin{table}[h]
@@ -249,21 +249,18 @@ at $x_0$ er absolutt minimum og $x=\frac{5\pi}{3}$ absolutt maksimum.
 \end{align*}
 
 \oppgave{4}
-Da $v'(t) = \frac{1}{10^3}$ er volumet gitt ved
+Volumet for en kule er $\frac{4}{3}\pi r^3$. Med $[v(t)] = \unit{m^3}$ har vi
+at $v'(t) = \frac{1}{10}$ og dermed $v(t) = \frac{t}{10} + C$.
+For å forenkle setter vi $v(0)=0$ slik at $C=0$. Da har vi
 \begin{align*}
-  v(t) = \unit[\frac{1}{10^3}t]{m^3} = \frac{4}{3}\pi r^3
+  v(t) &= \frac{t}{10} = \frac{4}{3}\pi r^3 \\
+  r(t) &= \operatorname{Re}\left( \frac{3}{4\pi}~v(t) \right)^\frac{1}{3}
+        = \operatorname{Re}\left( \frac{3}{4\pi}~\frac{t}{10} \right)^\frac{1}{3} \\
+       &= \frac{1}{2} \operatorname{Re}\left( \frac{3}{5\pi}~t \right)^\frac{1}{3} \\
+        r'(t) &= \frac{1}{6} \operatorname{Re}\left(
+        (\frac{3}{5\pi})^\frac{1}{3} ~t^{-\frac{2}{3}}
+          \right)
 \end{align*}
-Vi antar at $v(0) = \unit[0]{m^3}$. Vi setter $2r = d = \unit[0.2]{m}$ og løser
-for $t$:
-\begin{align*}
-  v(t) &= \frac{4}{3}\pi 0.1^3 = \frac{t}{10^3} \\
-  t &= \frac{4}{3}\pi
-\end{align*}
-Ta $v'(t) = \frac{1}{10^3}$ vil radien øke med
-\begin{align*}
-  \frac{dr}{dt} = \frac{1}{10}t^\frac{1}{3}
-\end{align*}
-I dette punktet øker altså radien med $\frac{1}{10}$.
 
 \oppgave{5}
 \textit{Ikke utført}
